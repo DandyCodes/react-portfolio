@@ -1,7 +1,13 @@
 header {
   box-sizing: border-box;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 5rem;
   background-color: hsl(220, 10%, 20%);
   padding: 0.5rem;
+}
+
+img {
+  height: 100%;
 }
