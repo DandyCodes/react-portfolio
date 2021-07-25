@@ -1,0 +1,14 @@
+nav {
+  display: grid;
+  column-gap: 0.75rem;
+  row-gap: 0.5rem;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 0.1rem;
+}
+
+@media screen and (min-width: 540px) {
+  nav {
+    display: flex;
+    gap: 2rem;
+  }
+}
