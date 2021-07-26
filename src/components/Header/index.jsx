@@ -5,7 +5,7 @@ import Navigation from "./Navigation";
 function Header() {
   return (
     <header>
-      <img src={logo} alt="logo" />
+      <img style={{ userSelect: "none" }} src={logo} alt="logo" />
       <Navigation></Navigation>
     </header>
   );

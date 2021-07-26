@@ -11,6 +11,7 @@ export const NavItem = styled.span`
   color: whitesmoke;
   cursor: pointer;
   font-size: 1.1rem;
+  user-select: none;
   :hover {
     color: var(--link);
   }
