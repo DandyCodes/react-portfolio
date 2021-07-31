@@ -1,0 +1,48 @@
+.perspective {
+  -webkit-perspective: 1000rem;
+  perspective: 1000rem;
+  -webkit-perspective-origin: 51% 2rem;
+  perspective-origin: 51% 2rem;
+}
+
+.cube {
+  --cube-width: 90vw;
+  --cube-height: 50rem;
+  width: var(--cube-width);
+  height: var(--cube-height);
+  position: relative;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transition: transform 0.5s ease-in;
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+}
+
+.face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#about-me {
+  transform: translateZ(calc(var(--cube-width) * 0.5));
+  -webkit-transform: translateZ(calc(var(--cube-width) * 0.5));
+  background: var(--primary);
+}
+
+#portfolio {
+  transform: rotateY(90deg) translateZ(calc(var(--cube-width) * 0.5));
+  -webkit-transform: rotateY(90deg) translateZ(calc(var(--cube-width) * 0.5));
+  background: var(--success);
+}
+
+#contact {
+  transform: rotateY(180deg) translateZ(calc(var(--cube-width) * 0.5));
+  -webkit-transform: rotateY(180deg) translateZ(calc(var(--cube-width) * 0.5));
+  background: var(--warning);
+}
+
+#resume {
+  transform: rotateY(270deg) translateZ(calc(var(--cube-width) * 0.5));
+  -webkit-transform: rotateY(270deg) translateZ(calc(var(--cube-width) * 0.5));
+  background: var(--danger);
+}
