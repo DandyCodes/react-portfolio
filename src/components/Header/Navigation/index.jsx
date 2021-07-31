@@ -1,9 +1,15 @@
 import NavItem from "./NavItem";
 import "./Navigation.css";
 
-function Navigation(props) {
-  const navClick = () => {
-    console.log(props);
+function Navigation() {
+  const navClick = event => {
+    const clickedNavItem = getNavItem(event);
+    if (!clickedNavItem) return;
+    if (Array.from(clickedNavItem.classList).includes("selected")) return;
+    const navClickEvent = new CustomEvent("navClick", {
+      detail: { clicked: clickedNavItem },
+    });
+    window.dispatchEvent(navClickEvent);
   };
   return (
     <nav onClick={navClick}>
@@ -16,3 +22,12 @@ function Navigation(props) {
 }
 
 export default Navigation;
+
+function getNavItem(event) {
+  if (event.target.tagName === "NAV") return null;
+  return event.target.tagName === "path"
+    ? event.target.parentElement.parentElement
+    : event.target.tagName === "svg"
+    ? event.target.parentElement
+    : event.target;
+}
