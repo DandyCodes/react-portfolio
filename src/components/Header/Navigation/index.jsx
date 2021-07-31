@@ -13,10 +13,15 @@ function Navigation() {
   };
   return (
     <nav onClick={navClick}>
-      <NavItem text="About Me" icon="info-circle" selected={true}></NavItem>
-      <NavItem text="Portfolio" icon="photo-video"></NavItem>
-      <NavItem text="Contact" icon="id-card"></NavItem>
-      <NavItem text="Resume" icon="file-invoice"></NavItem>
+      <NavItem
+        text="About Me"
+        icon="info-circle"
+        selected={true}
+        deg={0}
+      ></NavItem>
+      <NavItem text="Portfolio" icon="photo-video" deg={-90}></NavItem>
+      <NavItem text="Contact" icon="id-card" deg={-180}></NavItem>
+      <NavItem text="Resume" icon="file-invoice" deg={-270}></NavItem>
     </nav>
   );
 }
