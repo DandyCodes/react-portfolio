@@ -1,21 +1,15 @@
 import Header from "./components/Header";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { fab } from "@fortawesome/free-brands-svg-icons";
-import { fas } from "@fortawesome/free-solid-svg-icons";
+import Cube from "./components/Cube";
 import Footer from "./components/Footer";
-
-library.add(fab, fas);
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <Header></Header>
-      <main
-        style={{
-          backgroundColor: "var(--dark)",
-          minHeight: "calc(100vh - var(--header-size) - var(--footer-size))",
-        }}
-      ></main>
+      <main>
+        <Cube></Cube>
+      </main>
       <Footer></Footer>
     </div>
   );
