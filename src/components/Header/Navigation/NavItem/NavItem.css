@@ -10,3 +10,8 @@ span {
 span:hover {
   color: var(--link);
 }
+
+.selected {
+  color: var(--link);
+  cursor: initial;
+}
