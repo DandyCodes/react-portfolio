@@ -1,0 +1,16 @@
+footer {
+  box-sizing: border-box;
+  height: var(--footer-size);
+  background-color: var(--shadow);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+footer img {
+  height: 3rem;
+  position: absolute;
+  margin-left: -5rem;
+}
