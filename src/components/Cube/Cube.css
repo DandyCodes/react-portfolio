@@ -1,8 +1,19 @@
 .perspective {
-  perspective: 100rem;
+  perspective: 60rem;
   -webkit-perspective: 100rem;
   perspective-origin: 50% 33%;
   -webkit-perspective-origin: 50% 33%;
+}
+
+.cube-container {
+  transition: transform 0.1s;
+  transform: translateZ(-30rem);
+  perspective: 60rem;
+  -webkit-perspective: 100rem;
+  perspective-origin: 50% 33%;
+  -webkit-perspective-origin: 50% 33%;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
 }
 
 .cube {
@@ -11,11 +22,11 @@
   width: var(--cube-width);
   height: var(--cube-height);
   position: relative;
-  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform: rotateY(0deg) translate3d(0, 0, calc(var(--cube-width) * -0.5));
   -webkit-transform: rotateY(0deg)
     translate3d(0, 0, calc(var(--cube-width) * -0.5));
-  transform: rotateY(0deg) translate3d(0, 0, calc(var(--cube-width) * -0.5));
   transition: transform 0.5s;
 }
 
@@ -26,6 +37,8 @@
   position: absolute;
   padding: 1rem;
   background: var(--primary);
+  border: solid thin black;
+  backface-visibility: hidden;
 }
 
 #about-me {
