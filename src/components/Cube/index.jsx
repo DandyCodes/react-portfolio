@@ -3,7 +3,7 @@ import "./Cube.css";
 function Cube() {
   return (
     <div className="perspective">
-      <div className="container">
+      <div className="cube-container">
         <div className="cube">
           <article className="face" id="about-me">
             <h1>About Me</h1>
