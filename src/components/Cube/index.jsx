@@ -1,3 +1,7 @@
+import AboutMe from "./AboutMe";
+import Contact from "./Contact";
+import Portfolio from "./Portfolio";
+import Resume from "./Resume";
 import "./Cube.css";
 
 function Cube() {
@@ -6,20 +10,16 @@ function Cube() {
       <div className="cube-container">
         <div className="cube">
           <article className="face" id="about-me">
-            <h1>About Me</h1>
-            <p>about</p>
+            <AboutMe></AboutMe>
           </article>
           <article className="face" id="portfolio">
-            <h1>Portfolio</h1>
-            <p>portfolio</p>
+            <Portfolio></Portfolio>
           </article>
           <article className="face" id="contact">
-            <h1>Contact</h1>
-            <p>contact</p>
+            <Contact></Contact>
           </article>
           <article className="face" id="resume">
-            <h1>Resume</h1>
-            <p>resume</p>
+            <Resume></Resume>
           </article>
         </div>
       </div>
