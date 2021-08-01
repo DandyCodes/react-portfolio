@@ -18,10 +18,26 @@ function Navigation() {
         icon="info-circle"
         selected={true}
         deg={0}
+        trans={"0, 0, calc(var(--cube-width) * -0.5)"}
       ></NavItem>
-      <NavItem text="Portfolio" icon="photo-video" deg={-90}></NavItem>
-      <NavItem text="Contact" icon="id-card" deg={-180}></NavItem>
-      <NavItem text="Resume" icon="file-invoice" deg={-270}></NavItem>
+      <NavItem
+        text="Portfolio"
+        icon="photo-video"
+        deg={-90}
+        trans={"calc(var(--cube-width) * -0.5), 0, 0"}
+      ></NavItem>
+      <NavItem
+        text="Contact"
+        icon="id-card"
+        deg={-180}
+        trans={"0, 0, calc(var(--cube-width) * 0.5)"}
+      ></NavItem>
+      <NavItem
+        text="Resume"
+        icon="file-invoice"
+        deg={-270}
+        trans={"calc(var(--cube-width) * 0.5), 0, 0"}
+      ></NavItem>
     </nav>
   );
 }

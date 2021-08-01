@@ -1,8 +1,8 @@
 .perspective {
-  -webkit-perspective: 1000rem;
-  perspective: 1000rem;
-  -webkit-perspective-origin: 51% 2rem;
-  perspective-origin: 51% 2rem;
+  perspective: 100rem;
+  -webkit-perspective: 100rem;
+  perspective-origin: 50% 33%;
+  -webkit-perspective-origin: 50% 33%;
 }
 
 .cube {
@@ -11,10 +11,12 @@
   width: var(--cube-width);
   height: var(--cube-height);
   position: relative;
-  transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
-  transition: transform 0.5s ease-in;
-  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transform-style: preserve-3d;
+  -webkit-transform: rotateY(0deg)
+    translate3d(0, 0, calc(var(--cube-width) * -0.5));
+  transform: rotateY(0deg) translate3d(0, 0, calc(var(--cube-width) * -0.5));
+  transition: transform 0.5s;
 }
 
 .face {
@@ -23,29 +25,25 @@
   height: 100%;
   position: absolute;
   padding: 1rem;
-  border: solid black thin;
+  background: var(--primary);
 }
 
 #about-me {
-  transform: translateZ(calc(var(--cube-width) * 0.5));
-  -webkit-transform: translateZ(calc(var(--cube-width) * 0.5));
-  background: var(--primary);
+  transform: rotateY(0deg) translateZ(calc(var(--cube-width) * 0.5));
+  -webkit-transform: rotateY(0deg) translateZ(calc(var(--cube-width) * 0.5));
 }
 
 #portfolio {
   transform: rotateY(90deg) translateZ(calc(var(--cube-width) * 0.5));
   -webkit-transform: rotateY(90deg) translateZ(calc(var(--cube-width) * 0.5));
-  background: var(--success);
 }
 
 #contact {
   transform: rotateY(180deg) translateZ(calc(var(--cube-width) * 0.5));
   -webkit-transform: rotateY(180deg) translateZ(calc(var(--cube-width) * 0.5));
-  background: var(--warning);
 }
 
 #resume {
   transform: rotateY(270deg) translateZ(calc(var(--cube-width) * 0.5));
   -webkit-transform: rotateY(270deg) translateZ(calc(var(--cube-width) * 0.5));
-  background: var(--danger);
 }

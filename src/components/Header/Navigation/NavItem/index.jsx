@@ -8,8 +8,8 @@ function NavItem(props) {
     const switchToNavItem = () => {
       setSelected(true);
       const cube = document.querySelector(".cube");
-      cube.style.webkitTransform = `rotateY(${props.deg}deg)`;
-      cube.style.transform = `rotateY(${props.deg}deg)`;
+      cube.style.transform = `rotateY(${props.deg}deg) translate3d(${props.trans})`;
+      cube.style.webkitTransform = `rotateY(${props.deg}deg) translate3d(${props.trans})`;
     };
     const onNavClick = event => {
       event.detail.clicked.textContent.trim() === props.text.trim()
