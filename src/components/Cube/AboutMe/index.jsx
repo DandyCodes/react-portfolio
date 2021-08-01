@@ -7,12 +7,12 @@ function AboutMe() {
       <h1>John Barker</h1>
       <p className="subtitle">Full Stack Software Engineer</p>
       <img src={headshot} alt="John Barker" id="headshot" />
-      <p>
+      <p className="copy">
         Software Engineer with a Certificate in Full Stack Web Development from
         the University of Western Australia and a background in electronics,
         communications and linguistics.
       </p>
-      <p>
+      <p className="copy">
         Strengths in JavaScript, ORM/backend frameworks, frontend frameworks,
         and responsive, mobile first web design. Completed multiple projects
         utilising Node, Express, Sequelize, jQuery, Bootstrap, Bulma,
@@ -21,7 +21,7 @@ function AboutMe() {
         solving problems. Able to leverage diverse experience to liaise
         effectively and empathetically with stakeholders of all backgrounds.
       </p>
-      <p>
+      <p className="copy">
         Looking forward to bringing true value to end users through fantastic
         interactive experiences by contributing clean, beautiful code (and
         infectious positivity) to collaborative projects built for improving our

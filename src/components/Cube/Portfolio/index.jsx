@@ -1,5 +1,6 @@
 import Project from "./Project";
 import "./Portfolio.css";
+import headshot from "../../../assets/images/headshot.jpg";
 
 function Portfolio() {
   return (
@@ -7,9 +8,12 @@ function Portfolio() {
       <h1>Projects</h1>
       <div id="projects-container">
         <Project>
-          <h2>Project 1</h2>
-          <p className="description">Description of project one.</p>
-          <p className="technologies">HTML, CSS, JavaScript, jQuery</p>
+          <img src={headshot} alt="" />
+          <div className="project-overlay">
+            <h2>Project 1</h2>
+            <p className="description">Description of project one.</p>
+            <p className="technologies">HTML, CSS, JavaScript, jQuery</p>
+          </div>
         </Project>
         <Project>
           <h2>Project 2</h2>

@@ -1,19 +1,27 @@
 .project {
   background-color: var(--primary);
-  padding: 1rem;
   transition: all 0.5s;
   border: solid thin black;
   box-sizing: border-box;
   cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  min-height: 13rem;
 }
 
 .project:hover {
   transform: translate3d(0, -1rem, 5rem);
   border: solid thin var(--link);
+}
+
+.project-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0px;
+  width: 100%;
 }
 
 .description {
@@ -28,14 +36,20 @@
   color: black;
 }
 
+.project img {
+  object-position: center;
+  object-fit: cover;
+  position: absolute;
+}
+
 @media screen and (min-width: 768px) {
   .project {
-    min-height: 15rem;
+    min-height: 17rem;
   }
 }
 
 @media screen and (min-width: 1275px) {
   .project {
-    min-height: 20rem;
+    min-height: 22rem;
   }
 }

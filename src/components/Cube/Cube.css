@@ -18,7 +18,7 @@
 
 .cube {
   --cube-width: 90vw;
-  --cube-height: 75rem;
+  --cube-height: 88rem;
   width: var(--cube-width);
   max-width: 70rem;
   height: var(--cube-height);
@@ -43,13 +43,17 @@
 
 h1 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .subtitle {
   color: var(--info);
   text-align: center;
-  font-size: 1.75rem;
+  font-size: 2rem !important;
+}
+
+.copy {
+  font-size: 1.1rem;
 }
 
 @media screen and (min-width: 768px) {
