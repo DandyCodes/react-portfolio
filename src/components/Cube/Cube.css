@@ -1,12 +1,15 @@
 .perspective {
-  perspective: 60rem;
-  -webkit-perspective: 60rem;
+  perspective: 75rem;
+  -webkit-perspective: 75rem;
   perspective-origin: 50% 33%;
   -webkit-perspective-origin: 50% 33%;
+  --face-width: 90vw;
+  --max-face-width: 70rem;
+  --face-height: 100rem;
 }
 
 .cube-container {
-  transition: transform 0.1s;
+  transition: transform 0.2s;
   transform: translateZ(-30rem);
   perspective: 60rem;
   -webkit-perspective: 100rem;
@@ -17,18 +20,17 @@
 }
 
 .cube {
-  --cube-width: 90vw;
-  --cube-height: 100rem;
-  width: var(--cube-width);
-  max-width: 70rem;
-  height: var(--cube-height);
+  width: var(--face-width);
+  max-width: var(--max-face-width);
+  height: var(--face-height);
   position: relative;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
-  transform: rotateY(0deg) translate3d(0, 0, calc(var(--cube-width) * -0.5));
+  transform: rotateY(0deg)
+    translate3d(0, 0, max(calc(var(--face-width) * -0.5), -35rem));
   -webkit-transform: rotateY(0deg)
-    translate3d(0, 0, calc(var(--cube-width) * -0.5));
-  transition: transform 0.5s;
+    translate3d(0, 0, max(calc(var(--face-width) * -0.5), -35rem));
+  transition: transform 0.5s ease-out;
 }
 
 .face {
@@ -59,12 +61,12 @@
 
 @media screen and (min-width: 768px) {
   .cube {
-    --cube-height: 60rem;
+    --face-height: 60rem;
   }
 }
 
 @media screen and (min-width: 1275px) {
   .cube {
-    --cube-height: 50rem;
+    --face-height: 50rem;
   }
 }

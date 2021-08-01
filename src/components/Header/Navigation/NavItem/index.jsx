@@ -8,9 +8,13 @@ function NavItem(props) {
     const switchToNavItem = () => {
       setSelected(true);
       const cubeContainer = document.querySelector(".cube-container");
-      cubeContainer.style.transform = `translateZ(-200vw)`;
+      // cubeContainer.style.transform = `translateZ(max(calc(-1 * var(--face-width)), calc(-1 * var(--max-face-width))))`;
+      // cubeContainer.style.webkitTransform = `translateZ(max(calc(-1 * var(--face-width)), calc(-1 * var(--max-face-width))))`;
+      cubeContainer.style.transform = `translateZ(calc(2 * max(calc(-1 * var(--face-width)), calc(-1 * var(--max-face-width)))))`;
+      cubeContainer.style.webkitTransform = `translateZ(calc(2 * max(calc(-1 * var(--face-width)), calc(-1 * var(--max-face-width)))))`;
       const zoom = () => {
         cubeContainer.style.transform = `translateZ(0rem)`;
+        cubeContainer.style.webkitTransform = `translateZ(0rem)`;
       };
       setTimeout(zoom, 400);
       const cube = document.querySelector(".cube");

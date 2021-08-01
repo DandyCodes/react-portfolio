@@ -1,6 +1,7 @@
 #about-me {
-  transform: rotateY(0deg) translateZ(calc(var(--cube-width) * 0.5));
-  -webkit-transform: rotateY(0deg) translateZ(calc(var(--cube-width) * 0.5));
+  transform: rotateY(0deg) translateZ(min(calc(var(--face-width) * 0.5), 35rem));
+  -webkit-transform: rotateY(0deg)
+    translateZ(min(calc(var(--face-width) * 0.5), 35rem));
 }
 
 #headshot {

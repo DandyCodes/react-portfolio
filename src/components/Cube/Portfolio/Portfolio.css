@@ -1,6 +1,8 @@
 #portfolio {
-  transform: rotateY(90deg) translateZ(calc(var(--cube-width) * 0.5));
-  -webkit-transform: rotateY(90deg) translateZ(calc(var(--cube-width) * 0.5));
+  transform: rotateY(90deg)
+    translateZ(min(calc(var(--face-width) * 0.5), 35rem));
+  -webkit-transform: rotateY(90deg)
+    translateZ(min(calc(var(--face-width) * 0.5), 35rem));
   transform-style: preserve-3d;
 }
 
@@ -8,13 +10,12 @@
   transform-style: preserve-3d;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0.1rem;
+  gap: 1rem;
 }
 
 @media screen and (min-width: 768px) {
   #projects-container {
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
   }
 }
 

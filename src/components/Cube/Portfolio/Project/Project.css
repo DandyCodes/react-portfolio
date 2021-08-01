@@ -22,7 +22,7 @@
   padding: 0.5rem;
   transition: all 0.5s;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
+    2px 2px 0 #000;
 }
 
 .project:hover h2 {
@@ -31,23 +31,22 @@
   text-shadow: none;
 }
 
-.project a {
+.github {
+  text-decoration: none;
+  color: initial;
+  padding: 0.2rem;
+  font-size: 1.5rem;
+  background-color: var(--danger);
   position: absolute;
   top: 0px;
   right: 0px;
-  background-color: var(--danger);
-  text-decoration: none;
-  color: initial;
-  font-size: 1.5rem;
-  border-radius: 0.2rem;
-  padding: 0.2rem;
 }
 
-a:hover {
-  background-color: var(--warning);
+.github:hover {
+  background-color: lightcoral;
 }
 
-.description {
+.project p {
   transition: all 0.5s;
   position: absolute;
   bottom: 0px;
@@ -55,9 +54,10 @@ a:hover {
   margin: 0px;
   padding: 0.5rem;
   background-color: var(--primary);
+  color: white;
 }
 
-.project:hover .description {
+.project:hover p {
   color: initial;
   background-color: var(--link);
 }

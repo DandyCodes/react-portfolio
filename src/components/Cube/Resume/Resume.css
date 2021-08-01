@@ -1,4 +1,6 @@
 #resume {
-  transform: rotateY(270deg) translateZ(calc(var(--cube-width) * 0.5));
-  -webkit-transform: rotateY(270deg) translateZ(calc(var(--cube-width) * 0.5));
+  transform: rotateY(270deg)
+    translateZ(min(calc(var(--face-width) * 0.5), 35rem));
+  -webkit-transform: rotateY(270deg)
+    translateZ(min(calc(var(--face-width) * 0.5), 35rem));
 }
