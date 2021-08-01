@@ -4,8 +4,8 @@ import "./Resume.css";
 function Resume() {
   return (
     <Fragment>
-      <h1>Contact</h1>
-      <p>contact</p>
+      <h1>Resume</h1>
+      <p>resume</p>
     </Fragment>
   );
 }
