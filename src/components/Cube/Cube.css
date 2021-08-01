@@ -1,6 +1,6 @@
 .perspective {
   perspective: 60rem;
-  -webkit-perspective: 100rem;
+  -webkit-perspective: 60rem;
   perspective-origin: 50% 33%;
   -webkit-perspective-origin: 50% 33%;
 }
@@ -18,8 +18,9 @@
 
 .cube {
   --cube-width: 90vw;
-  --cube-height: 50rem;
+  --cube-height: 72rem;
   width: var(--cube-width);
+  max-width: 70rem;
   height: var(--cube-height);
   position: relative;
   transform-style: preserve-3d;
@@ -35,10 +36,20 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  padding: 1rem;
-  background: var(--primary);
-  border: solid thin black;
+  background: var(--dark);
+  color: white;
   backface-visibility: hidden;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.subtitle {
+  color: var(--info);
+  text-align: center;
+  font-size: 1.75rem;
 }
 
 #about-me {
@@ -59,4 +70,10 @@
 #resume {
   transform: rotateY(270deg) translateZ(calc(var(--cube-width) * 0.5));
   -webkit-transform: rotateY(270deg) translateZ(calc(var(--cube-width) * 0.5));
+}
+
+@media screen and (min-width: 500px) {
+  .cube {
+    --cube-height: 50rem;
+  }
 }
