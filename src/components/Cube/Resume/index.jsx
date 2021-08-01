@@ -1,12 +1,11 @@
-import { Fragment } from "react";
 import "./Resume.css";
 
 function Resume() {
   return (
-    <Fragment>
+    <article className="face" id="resume">
       <h1>Resume</h1>
       <p>resume</p>
-    </Fragment>
+    </article>
   );
 }
 

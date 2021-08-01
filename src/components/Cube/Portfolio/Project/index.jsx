@@ -1,7 +1,7 @@
 import "./Project.css";
 
-function Project() {
-  return <div></div>;
+function Project(props) {
+  return <div className="project">{props.children}</div>;
 }
 
 export default Project;

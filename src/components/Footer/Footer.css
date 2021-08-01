@@ -8,9 +8,3 @@ footer {
   align-items: center;
   padding: 0.5rem;
 }
-
-footer img {
-  height: 3rem;
-  position: absolute;
-  margin-left: -4rem;
-}
