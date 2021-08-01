@@ -7,6 +7,12 @@ function NavItem(props) {
   useEffect(() => {
     const switchToNavItem = () => {
       setSelected(true);
+      const cubeContainer = document.querySelector(".cube-container");
+      cubeContainer.style.transform = `translateZ(-200vw)`;
+      const zoom = () => {
+        cubeContainer.style.transform = `translateZ(0rem)`;
+      };
+      setTimeout(zoom, 400);
       const cube = document.querySelector(".cube");
       cube.style.transform = `rotateY(${props.deg}deg) translate3d(${props.trans})`;
       cube.style.webkitTransform = `rotateY(${props.deg}deg) translate3d(${props.trans})`;
