@@ -18,7 +18,7 @@
 
 .cube {
   --cube-width: 90vw;
-  --cube-height: 88rem;
+  --cube-height: 100rem;
   width: var(--cube-width);
   max-width: 70rem;
   height: var(--cube-height);
@@ -41,18 +41,19 @@
   backface-visibility: hidden;
 }
 
-h1 {
+.cube h1 {
+  margin-top: 0px;
   text-align: center;
   font-size: 3rem;
 }
 
-.subtitle {
+.cube .subtitle {
   color: var(--info);
   text-align: center;
   font-size: 2rem !important;
 }
 
-.copy {
+.cube .copy {
   font-size: 1.1rem;
 }
 

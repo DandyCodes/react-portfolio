@@ -8,12 +8,13 @@
   transform-style: preserve-3d;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 0.1rem;
 }
 
 @media screen and (min-width: 768px) {
   #projects-container {
     grid-template-columns: 1fr 1fr;
+    gap: 1rem;
   }
 }
 
