@@ -1,3 +1,8 @@
+#about-me {
+  transform: rotateY(0deg) translateZ(calc(var(--cube-width) * 0.5));
+  -webkit-transform: rotateY(0deg) translateZ(calc(var(--cube-width) * 0.5));
+}
+
 #headshot {
   border-radius: 50%;
   border: whitesmoke solid;

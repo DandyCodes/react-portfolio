@@ -1,10 +1,9 @@
-import { Fragment } from "react";
 import "./AboutMe.css";
 import headshot from "../../../assets/images/headshot.jpg";
 
 function AboutMe() {
   return (
-    <Fragment>
+    <article className="face" id="about-me">
       <h1>John Barker</h1>
       <p className="subtitle">Full Stack Software Engineer</p>
       <img src={headshot} alt="John Barker" id="headshot" />
@@ -28,7 +27,7 @@ function AboutMe() {
         infectious positivity) to collaborative projects built for improving our
         digital lives.
       </p>
-    </Fragment>
+    </article>
   );
 }
 

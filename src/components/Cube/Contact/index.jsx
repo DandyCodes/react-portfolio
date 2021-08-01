@@ -1,12 +1,11 @@
-import { Fragment } from "react";
 import "./Contact.css";
 
 function Contact() {
   return (
-    <Fragment>
+    <article className="face" id="contact">
       <h1>Contact</h1>
       <p>contact</p>
-    </Fragment>
+    </article>
   );
 }
 

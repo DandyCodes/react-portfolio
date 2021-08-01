@@ -1,0 +1,4 @@
+#contact {
+  transform: rotateY(180deg) translateZ(calc(var(--cube-width) * 0.5));
+  -webkit-transform: rotateY(180deg) translateZ(calc(var(--cube-width) * 0.5));
+}

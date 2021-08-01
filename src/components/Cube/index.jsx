@@ -9,18 +9,10 @@ function Cube() {
     <div className="perspective">
       <div className="cube-container">
         <div className="cube">
-          <article className="face" id="about-me">
-            <AboutMe></AboutMe>
-          </article>
-          <article className="face" id="portfolio">
-            <Portfolio></Portfolio>
-          </article>
-          <article className="face" id="contact">
-            <Contact></Contact>
-          </article>
-          <article className="face" id="resume">
-            <Resume></Resume>
-          </article>
+          <AboutMe></AboutMe>
+          <Portfolio></Portfolio>
+          <Contact></Contact>
+          <Resume></Resume>
         </div>
       </div>
     </div>
