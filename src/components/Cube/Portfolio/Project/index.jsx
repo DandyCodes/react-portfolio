@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import "./Project.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Project(props) {
   return (
@@ -15,7 +16,7 @@ function Project(props) {
         target="_blank"
         rel="noreferrer"
       >
-        GitHub
+        <FontAwesomeIcon icon={["fab", "github"]}></FontAwesomeIcon>
       </a>
     </div>
   );

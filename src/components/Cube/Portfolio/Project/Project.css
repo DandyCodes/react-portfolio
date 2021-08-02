@@ -33,17 +33,26 @@
 
 .github {
   text-decoration: none;
-  color: initial;
-  padding: 0.2rem;
-  font-size: 1.5rem;
-  background-color: var(--danger);
+  color: var(--link);
+  background-color: black;
+  padding: 0.5rem;
+  font-size: 3rem;
   position: absolute;
   top: 0px;
   right: 0px;
+  border-radius: 50%;
+  margin: 0.1rem;
+  line-height: 0;
+  transition: all 0.5s;
 }
 
 .github:hover {
-  background-color: lightcoral;
+  background-color: var(--link);
+  color: black !important;
+}
+
+.project:hover .github {
+  color: var(--info);
 }
 
 .project p {

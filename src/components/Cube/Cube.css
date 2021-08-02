@@ -27,9 +27,17 @@
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
   transform: rotateY(0deg)
-    translate3d(0, 0, max(calc(var(--face-width) * -0.5), -35rem));
+    translate3d(
+      0,
+      0,
+      max(calc(var(--face-width) * -0.5), calc(var(--max-face-width) * -0.5))
+    );
   -webkit-transform: rotateY(0deg)
-    translate3d(0, 0, max(calc(var(--face-width) * -0.5), -35rem));
+    translate3d(
+      0,
+      0,
+      max(calc(var(--face-width) * -0.5), calc(var(--max-face-width) * -0.5))
+    );
   transition: transform 0.5s ease-out;
 }
 
