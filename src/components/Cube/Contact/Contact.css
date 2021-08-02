@@ -4,3 +4,35 @@
   -webkit-transform: rotateY(180deg)
     translateZ(min(calc(var(--face-width) * 0.5), 35rem));
 }
+
+#contact input {
+  width: 100%;
+  max-width: 15rem;
+  padding: 0.5rem;
+}
+
+#contact input,
+#contact textarea,
+label {
+  font-size: 1.2rem;
+  margin: 0.5rem 0rem;
+}
+
+#contact textarea {
+  width: 100%;
+  resize: none;
+  height: 30rem;
+}
+
+#contact span {
+  color: var(--danger);
+  font-weight: bold;
+}
+
+#contact button {
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  background-color: var(--success);
+}

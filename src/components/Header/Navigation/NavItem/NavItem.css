@@ -1,4 +1,4 @@
-span {
+nav span {
   white-space: nowrap;
   text-align: center;
   color: whitesmoke;
@@ -7,11 +7,11 @@ span {
   user-select: none;
 }
 
-span:hover {
+nav span:hover {
   color: var(--link);
 }
 
-.selected {
+nav .selected {
   color: var(--link);
   cursor: initial;
 }
