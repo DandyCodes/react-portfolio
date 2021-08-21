@@ -4,3 +4,28 @@
   -webkit-transform: rotateY(270deg)
     translateZ(min(calc(var(--face-width) * 0.5), 35rem));
 }
+
+#resume h3,
+#resume p {
+  text-align: center;
+  font-size: large;
+}
+
+#resume h3 {
+  text-decoration: underline var(--primary) 0.15rem;
+  font-size: 1.75rem;
+}
+
+#resume a {
+  text-decoration: none;
+  color: var(--link);
+}
+
+#resume a:hover {
+  color: var(--link-hover);
+}
+
+.proficiencies {
+  display: flex;
+  justify-content: center;
+}
