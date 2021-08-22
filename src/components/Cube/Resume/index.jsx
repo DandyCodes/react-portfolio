@@ -1,4 +1,5 @@
 import "./Resume.css";
+import resume from "../../../assets/ResumeJohnBarkerPub.pdf";
 
 function Resume() {
   return (
@@ -6,7 +7,7 @@ function Resume() {
       <h1>Resume</h1>
       <p>
         Download my{" "}
-        <a href="/ResumeJohnBarkerPub.pdf" download>
+        <a href={resume} download>
           resume
         </a>
         .
