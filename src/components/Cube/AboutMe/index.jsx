@@ -8,7 +8,7 @@ function AboutMe() {
       <p className="subtitle">Full Stack Software Engineer</p>
       <img src={headshot} alt="John Barker" id="headshot" />
       <p className="copy">
-        Software Engineer with a Certificate in Full Stack Web Development from
+        Software Developer with a Certificate in Full Stack Web Development from
         the University of Western Australia and a background in electronics,
         communications and linguistics.
       </p>
