@@ -5,7 +5,7 @@ function AboutMe() {
   return (
     <article className="face" id="about-me">
       <h1>John Barker</h1>
-      <p className="subtitle">Full Stack Software Engineer</p>
+      <p className="subtitle">Full Stack Software Developer</p>
       <img src={headshot} alt="John Barker" id="headshot" />
       <p className="copy">
         Software Developer with a Certificate in Full Stack Web Development from
