@@ -1,5 +1,5 @@
 import "./Resume.css";
-import resume from "../../../assets/ResumeJohnBarkerPub.pdf";
+import resume from "../../../assets/ResumeJohnBarker.pdf";
 
 function Resume() {
   return (
